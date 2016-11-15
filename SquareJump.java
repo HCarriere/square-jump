@@ -244,7 +244,6 @@ public void onCreate(Bundle savedInstanceState) {
   adView.setAdListener(adListener);
   AdRequest adRequest = new AdRequest();
   // adRequest.addTestDevice(adRequest.TEST_EMULATOR);         // Emulator
-  //adRequest.addTestDevice("7914A752D1812C22FC2CCC468A6C5CDE");     // Test Android Device
   adView.loadAd(adRequest);
   adsLayout.addView(adView, lp2);
   window.addContentView(adsLayout, lp2); 
@@ -278,7 +277,7 @@ public void onCreate(Bundle savedInstanceState) {
 
   editor = sharedPref.edit();
 
-  Parse.initialize(this, "N84khIllDzSMrBfUqSLALBpzvvFRZBKvktlx28I2", "kBPw4BaTyrZWRV4ZeCoHzj1aL8qnxl2IAFJk5Jpx");
+  Parse.initialize(this, "", "");
 }
 
 
